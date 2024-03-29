@@ -1,0 +1,7 @@
+{
+  "name": "AppNovo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
