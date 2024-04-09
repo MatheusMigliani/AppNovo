@@ -1,0 +1,87 @@
+/* Login.css */
+body {
+    --ion-background-color: #3C0854;
+  }
+  
+  .ion-padding {
+    padding: 0;
+  }
+  
+  .login-logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .login-form {
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .ion-input {
+    background: #EFEFEF;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 15px;
+  }
+  
+  ion-button {
+    --background: #fff;
+    --border-radius: 8px;
+    --padding-top: 15px;
+    --padding-bottom: 15px;
+    --border: 0;
+    background-color: #fff;
+    color: #3C0854;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  ion-input::placeholder {
+    color: #9E9E9E;
+    opacity: 1; /* Firefox */
+  }
+  
+  .login-register {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .login-register a {
+    color: #7C4DFF;
+    text-decoration: none;
+  }
+  
+  .login-or {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  ion-footer {
+
+    font-size: 0.75em;
+  }
+  
+  /* For the Google button to have an outline style */
+  ion-button[fill="clear"] {
+    --background: transparent;
+    --color: #000;
+    border: 1px solid #d7d8da;
+  }
+  
+  ion-button[fill="clear"] ion-icon {
+    color: #3C0854;
+  }
+  
+  /* Adjustments for small screens */
+  @media (max-width: 576px) {
+    .login-logo img {
+      max-width: 80%;
+      height: auto;
+    }
+  }
+  
