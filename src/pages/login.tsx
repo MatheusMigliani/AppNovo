@@ -49,7 +49,7 @@ const Login: React.FC = () => {
               placeholder="Senha..."
               type="password"
             />
-            <IonButton expand="block">Entrar</IonButton>
+            <IonButton expand="block" routerLink="home">Entrar</IonButton>
             <IonText className="login-register">
               <a href="register">Clique aqui para se Registrar</a>
             </IonText>

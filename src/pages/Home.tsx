@@ -1,28 +1,49 @@
 import {
+  IonButtons,
   IonContent,
   IonHeader,
+  IonIcon,
+  IonLabel,
+  IonMenu,
+  IonMenuButton,
   IonPage,
+  IonTabBar,
+  IonTabButton,
   IonTitle,
   IonToolbar,
 } from "@ionic/react";
 import "./Home.css";
+import { playCircle } from "ionicons/icons";
 
 const Home: React.FC = () => {
   return (
+    
     <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>Matheus Davi - ADS0302N</IonTitle>
-        </IonToolbar>
-      </IonHeader>
-      <IonContent fullscreen>
-        <IonHeader collapse="condense">
+      <IonMenu contentId="main-content">
+        <IonHeader>
           <IonToolbar>
-            <IonTitle size="large">Teste live</IonTitle>
+            <IonTitle>Menu Content</IonTitle>
           </IonToolbar>
         </IonHeader>
-      </IonContent>
+        <IonContent className="ion-padding">
+          This is the menu content.
+        </IonContent>
+      </IonMenu>
+      <IonPage id="main-content">
+        <IonHeader>
+          <IonToolbar>
+            <IonButtons slot="start">
+              <IonMenuButton></IonMenuButton>
+            </IonButtons>
+            <IonTitle>Menu</IonTitle>
+          </IonToolbar>
+        </IonHeader>
+        <IonContent className="ion-padding">
+          Tap the button in the toolbar to open the menu.
+        </IonContent>
+      </IonPage>
     </IonPage>
+
   );
 };
 
