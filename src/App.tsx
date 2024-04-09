@@ -23,6 +23,7 @@ import "@ionic/react/css/display.css";
 import "./theme/variables.css";
 import Splash from "./pages/splash";
 import Login from "./pages/login";
+import Register from "./pages/register";
 
 setupIonicReact();
 
@@ -34,10 +35,10 @@ const App: React.FC = () => (
           <Home />
         </Route>
         <Route exact path="/">
-          <Redirect to="/home" />
         </Route>
-        <Route component={Login} path="/login" exact></Route>
-        <Route component={Splash} path="/splash" exact></Route>
+        <Route component={Login} path="/login"></Route>
+        <Route component={Splash} path="/splash"></Route>
+        <Route component={Register} path="/register"></Route>
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>
