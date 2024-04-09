@@ -35,8 +35,20 @@ const Login: React.FC = () => {
           </div>
 
           <div className="login-form">
-            <IonInput placeholder="E-mail..." type="email" />
-            <IonInput placeholder="Senha..." type="password" />
+            <IonInput
+              fill="outline"
+              label="Email"
+              labelPlacement="floating"
+              placeholder="E-mail..."
+              type="email"
+            />
+            <IonInput
+              fill="outline"
+              label="Senha"
+              labelPlacement="floating"
+              placeholder="Senha..."
+              type="password"
+            />
             <IonButton expand="block">Entrar</IonButton>
             <IonText className="login-register">
               <a href="register">Clique aqui para se Registrar</a>

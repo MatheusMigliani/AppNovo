@@ -19,42 +19,54 @@ import Register from "./register";
 const Login: React.FC = () => {
   return (
     <IonApp>
-      <IonPage>
-        <IonContent className="ion-padding" color={"dark"}>
-          <div className="login-logo">
-            <img
-              src="/public/assets/TA BARATO no name.svg"
-              width={113}
-              height={139}
-              alt="logo"
-              className="logoimg"
-            />
-          </div>
-          <div className="ion-text-center">
-            <IonText className="ion-text-center">Registro</IonText>
-          </div>
+    <IonPage>
+      <IonContent className="ion-padding" color={"dark"}>
+        <div className="login-logo">
+          <img
+            src="/public/assets/TA BARATO no name.svg"
+            width={113}
+            height={139}
+            alt="logo"
+            className="logoimg"
+          />
+        </div>
+        <div className="ion-text-center">
+          <IonText className="ion-text-center">Registro</IonText>
+        </div>
 
-          <div className="login-form">
-            <IonInput placeholder="E-mail..." type="email" />
-            <IonInput placeholder="Senha..." type="password" />
-            <IonButton expand="block">Entrar</IonButton>
-            <IonText className="login-register">
-              <a href="login" >Retornar ao Login</a>
-            </IonText>
-            <div className="login-or">ou continue com o</div>
-            <IonButton expand="block" fill="clear">
-              <IonIcon slot="start" icon={logoGoogle} />
-              Google
-            </IonButton>
-            <IonText className="ion-text-center ion-padding">
-              Ao clicar em continuar, você aceita nossos Termos de serviço e
-              Privacidade.
-            </IonText>
-          </div>
-        </IonContent>
-        <IonFooter className="ion-text-center ion-padding">@M1gliani</IonFooter>
-      </IonPage>
-    </IonApp>
+        <div className="login-form">
+          <IonInput
+            fill="outline"
+            label="Email"
+            labelPlacement="floating"
+            placeholder="E-mail..."
+            type="email"
+          />
+          <IonInput
+            fill="outline"
+            label="Senha"
+            labelPlacement="floating"
+            placeholder="Senha..."
+            type="password"
+          />
+          <IonButton expand="block">Entrar</IonButton>
+          <IonText className="login-register">
+            <a href="login" >Retornar ao login</a>
+          </IonText>
+          <div className="login-or">ou continue com o</div>
+          <IonButton expand="block" fill="clear">
+            <IonIcon slot="start" icon={logoGoogle} />
+            Google
+          </IonButton>
+          <IonText className="ion-text-center ion-padding">
+            Ao clicar em continuar, você aceita nossos Termos de serviço e
+            Privacidade.
+          </IonText>
+        </div>
+      </IonContent>
+      <IonFooter className="ion-text-center ion-padding">@M1gliani</IonFooter>
+    </IonPage>
+  </IonApp>
   );
 };
 
